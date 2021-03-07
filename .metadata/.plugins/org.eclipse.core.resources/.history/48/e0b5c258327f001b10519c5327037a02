@@ -1,0 +1,98 @@
+
+/*----------------------------------------------------------------------------------------------------------------------
+07.02.2021
+Gramerin en önemli iki alanı sentaks (syntax) ve semantik (sematic) dir. Bir olguya dil denebilmesi için
+en azından sentaks ve semantiğe sahip olması gerekir.
+Sentaks dilin doğru yazma ve doğru dizilime yönelik kurallarıdır.
+    System.out.println "Hello World"); sentaks hatası vardır
+Dildeki doğru dizilmiş elemanların ne anlam ifade ettiğine ilişkin kurallardır
+
+Bilgisayar dili (computer language): Bilgisayar bilimlerinde kullanılmak üzere tasarlanmış dillerdir.
+Bir bilgisayar dilinde akış (flow) öğesi varsa artık programlama dili (programming language) denir.
+Her bilgisayar dili programlama dili değildir. Örneğin: html, xml, json
+Java, C#, Kotlin, C, C++ vs. programlama dilleridir.
+----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------
+Derleyiciler 3 (üç) çeşit teşhis mesajı (diagnostic message) verirler:
+1. Gerçek hatalar (errors): Dilin sentaks ve semantik kurallarına uyulmamasından kaynaklanan hatalardır.
+Bu durumda "byte code" üretilmez.
+
+2. Uyarılar (warnings): Derleyicinin olası programlama ve mantık hatası olabileceğine ilişkin mesajlarıdır.
+Bu durumda "byte code" üretilir. Programcının uyarıları dikkate alması gerekir. Bir ürünün son durumunda
+tüm uyarıların giderilmiş olması ideal durumdur. Çok özel durumlar dışında uyarılar mutlaka giderilmelidir.
+Bazı durumlarda derleyici uyarı vermese bile IDE programlar uyarı verebilir. Bunlar da dikkate alınmalı
+gerekirse düzeltilmelidir
+
+3. Ölümcül hatalar (fatal errors): Derleme işlemini bile engelleyebilecek ciddi durumlardır. Programcının kodları
+anlamında yapacak birşeyi yoktur. Bu hayata yol açan durumu düzeltmelidir. Örneğin: diskte boş alan kalmaması, 
+belirtilen dosyanın bulunamaması, işletim sisteminde problem olması gibi durumlardır.
+----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------
+Anahtar Notlar: Programlamada iki temel zamanı programcının ayırması gerekir: derleme zamanı (compile time), çalışma zamanı (run time)
+Her ne kadar bu iki kavram dolaylı olarak birbirine bağlı olsa da farklılık unutulmamalıdır. Derleme işlemi sırasında
+yapılanlara "derleme zamanı işlemleri", çalışma zamanı yapılanlara ise "çalışma zamanı işlemleri" denir. 
+----------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------------------------------
+Çalışma zamanı sırasında oluşan hatalara "exception" denir. Exception işlemleri konusunda ayrıntılı inceleme 
+yapılıncaya kadar biz "exception oluştuğunda program çöker (sonlanır)" algılayacağız.
+----------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------------------------------
+Atom (Token):
+Bir programlama dilinde kendi başına anlamlı olan en küçük birime atom denir. Java'da atomlar 6(altı) çeşittir:
+1. Anahtar sözcükler (keywords, reserved words)    
+2. Değişkenler (identifiers, variables)
+3. Operatörler (operators)
+4. Sabitler (literals, constants)
+5. String'ler (string literals)
+6. Ayıraçlar (delimiters, punctuators)
+----------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------------------------------
+Whitespace characters: Klavyeden basıldığında boşluk hissi veren karakterlerdir. Boşluk karakterleri tipik olarak
+SPACE, TAB ve ENTER karakterleridir
+----------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------------------------------
+Java'da atomlar arasındaki istenildiği kadar boşluk (whitespace) bırakılabilir
+----------------------------------------------------------------------------------------------------------------------*/
+package csd;
+
+class 
+
+
+
+
+
+App2 
+
+
+
+
+{
+public 				static void main			(		String [								   ] args)
+					{
+	System.out.
+	
+	
+						println					("Hello, World");
+}	
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+Java'da anahtar sözcükler ve değişkenler dışında atomlar istenildiği kadar bitişik yazılabilir
+----------------------------------------------------------------------------------------------------------------------*/
+package csd;class App{public static void main(String[]args){System.out.println("Hello, World");}}
+
+/*----------------------------------------------------------------------------------------------------------------------
+Java'da anahtar sözcükler ve değişkenler dışında atomlar istenildiği kadar bitişik yazılabilir
+----------------------------------------------------------------------------------------------------------------------*/
+package csd;class App{publicstatic void main(String[]args){System.out.println("Hello, World");}} //error
+
+/*----------------------------------------------------------------------------------------------------------------------
+Java'da yorum satırları (comment lines)
+----------------------------------------------------------------------------------------------------------------------*/
+
+package csd;
+
